@@ -208,7 +208,7 @@ greedy_joining(size_t n, std::vector<std::array<size_t, 2>> edges, std::vector<V
         graph.removeVertex(merge_vertex);
         value_of_cut -= edge.w;
     }
-    //std::cout << "\r                                      \r" << std::flush;
+   
 
 
     // return a node labeling and the value of the computed solution
@@ -457,10 +457,3 @@ std::vector<std::pair<size_t, size_t>> luby_jones_handshake(size_t n, const Dyna
 
     return result;
 }
-
-
-
-
-
-
-
