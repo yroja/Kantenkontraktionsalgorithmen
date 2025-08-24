@@ -15,6 +15,7 @@
 #include <utility>
 #include <partition.hxx>
 
+//https://github.com/bjoern-andres/graph/blob/master/include/andres/graph/multicut/greedy-additive.hxx
 
 /**
  * This class implements an undirected edge weighted graph data structure.
@@ -457,3 +458,4 @@ std::vector<std::pair<size_t, size_t>> luby_jones_handshake(size_t n, const Dyna
 
     return result;
 }
+
