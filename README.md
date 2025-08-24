@@ -4,7 +4,7 @@ Dieses Repository enthält die Implementierungen der in der Bachelor-Arbeit verw
 
 ## Inhalt
 
-- **`greedy_joining_extended.hxx`**: Implementierung des Greedy-Joining-Algorithmus sowie der Erweiterung zur parallelen Kantenkontraktion. Diese Erweiterung berechnet die Kontraktionsmenge mittels des *Luby-Jones-Handshaking*-Algorithmus zur Berechnung eines maximalen Matchings (mode != 'f') bzw. des *Mutex-Kruskal*-Algorithmus zur Konstruktion eines konfliktfreien Spannwaldes (mode = 'f') auf ungerichteten, gewichteten Graphen.  
+- **`greedy_joining_extended.hxx`**: Implementierung des Greedy-Joining-Algorithmus sowie der Erweiterung zur parallelen Kantenkontraktion. Diese Erweiterung ermittelt die Kontraktionsmenge mittels des *Luby-Jones-Handshaking*-Algorithmus zur Berechnung eines maximalen Matchings (mode != 'f') bzw. des *Mutex-Kruskal*-Algorithmus zur Konstruktion eines konfliktfreien Spannwaldes (mode = 'f') auf ungerichteten, gewichteten Graphen.  
 - **`partition.hxx`**: Disjoint-Set-Datenstruktur zur Partitionierung von Knoten, verwendet in den Algorithmen.  
 
 ## Nutzung
