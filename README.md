@@ -1,6 +1,6 @@
 # Kantenkontraktionsalgorithmen für das Multicut-Problem
 
-Dieses Repository enthält die Implementierungen der in der Bachelorarbeit verwendeten Algorithmen.
+Dieses Repository enthält die Implementierungen der in der Bachelor-Arbeit verwendeten Algorithmen.
 
 ## Inhalt
 
