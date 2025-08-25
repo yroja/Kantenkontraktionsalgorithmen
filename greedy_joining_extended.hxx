@@ -395,7 +395,7 @@ std::vector<std::pair<size_t, size_t>> kruskal(std::vector<std::tuple<VALUE_TYPE
 
 template <typename VALUE_TYPE>
 std::vector<std::pair<size_t, size_t>> luby_jones_handshake(size_t n, const DynamicGraph<VALUE_TYPE>& graph, size_t frac) {
-    std::vector<std::tuple<size_t, size_t, VALUE_TYPE>> weighted_matches; // (u, v, weight)
+    std::vector<std::tuple<size_t, size_t, VALUE_TYPE>> weighted_matches; 
     std::vector<bool> alive(n, true);
 
     while (true) {
@@ -442,13 +442,11 @@ std::vector<std::pair<size_t, size_t>> luby_jones_handshake(size_t n, const Dyna
         }
     }
 
-    // Sortiere nach Gewicht (absteigend)
     std::sort(weighted_matches.begin(), weighted_matches.end(),
         [](const auto& a, const auto& b) {
             return std::get<2>(a) > std::get<2>(b); // descending by weight
         });
 
-    // Schneide auf die ersten frac Elemente zu, wenn möglich
     size_t result_size = std::min(frac, weighted_matches.size());
     std::vector<std::pair<size_t, size_t>> result;
     result.reserve(result_size);
@@ -458,4 +456,5 @@ std::vector<std::pair<size_t, size_t>> luby_jones_handshake(size_t n, const Dyna
 
     return result;
 }
+
 
